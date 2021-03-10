@@ -14,7 +14,8 @@ int main(){
    int i;
    char lyric[128];
    printf("Enter the first line of your most favorite lyric: ");
-   fgets(lyric, 128, stdin); //Using scanf didn't take into account whitespaces when a user types in a string. It would only print out one word, and ignore the rest.
+   scanf("%[^\n]", lyric);
+   //fgets(lyric, 128, stdin); //Using scanf didn't take into account whitespaces when a user types in a string. It would only print out one word, and ignore the rest.
 
    for (i = 0; i <= strlen(lyric); i++){ 
       if (lyric[i] >= 97 && lyric[i] <= 122) //'97' ~ '122' represents 'a' ~ 'z' on the ASCII table. 
