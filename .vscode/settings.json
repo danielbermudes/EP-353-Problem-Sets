@@ -16,6 +16,7 @@
         "stdio.h": "c",
         "__bit_reference": "c",
         "chrono": "c",
-        "memory": "c"
+        "memory": "c",
+        "time.h": "c"
     }
 }
